@@ -1,0 +1,12 @@
+<div id="vaccinatedDogs" *ngIf="showVaccinated">
+  <h1>Vaccinated dogs</h1>
+  <ol>
+    <li *ngFor="let vaccinatedDog of vaccinatedDogs">{{ vaccinatedDog }}</li>
+  </ol>
+</div>
+<div id="unvaccinatedDogs" *ngIf="!showVaccinated">
+  <h1 (mouseup)="changeMyHeading()">{{ titleUnvaccinated }}</h1>
+  <ol>
+    <li *ngFor="let unvaccinatedDog of unvaccinatedDogs">{{ unvaccinatedDog }}</li>
+  </ol>
+</div>
