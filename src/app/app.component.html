@@ -22,13 +22,13 @@
 </div>
 
 <div class="content" role="main">
-  <app-dog></app-dog>
+  <app-dog [sharedTitle]="dogTitle" [items]="dogNames"></app-dog>
 
   <h1>Exercise</h1>
   <h4 *ngFor="let doggie of doggies">{{ doggie.name }}</h4>
   <p *ngIf="doggies.length < 2">Who let the dogs out?</p>
   <button (click)="bark()">Click to Bark</button>
-  <button (click)="addDog()">Add random dog</button>
+  <button (click)="addDog()">Add any dog</button>
 
   <svg id="clouds" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677" viewBox="0 0 2611.084 485.677">
     <title>Gray Clouds Background</title>

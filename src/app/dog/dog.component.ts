@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-dog',
@@ -6,6 +6,9 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./dog.component.css']
 })
 export class DogComponent implements OnInit {
+  @Input() sharedTitle: string = '';
+  @Input() items: string[] = [];
+
   showVaccinated : boolean = false;
   vaccinatedDogs : string[] = [];
   unvaccinatedDogs : string[] = ['Dalmatian', 'Bull dog', 'Dober'];
