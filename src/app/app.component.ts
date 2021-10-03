@@ -14,4 +14,11 @@ export class AppComponent implements OnInit {
     this.doggies.push(new Dog('Jack', 'Dober', 'Run faster'));
     // this.doggies.push(new Dog('Julie', 'Alsheshian', 'Eats well'));
   }
+  bark(): void {
+    alert("Wooff! Woff!");
+  }
+
+  addDog() {
+    this.doggies.push(new Dog('Harry', 'German sheperd', 'Run faster than all'));
+  }
 }
