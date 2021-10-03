@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import { Dog } from '../model/Dog';
 
 @Component({
   selector: 'app-dog',
@@ -8,6 +9,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class DogComponent implements OnInit {
   @Input() sharedTitle: string = '';
   @Input() items: string[] = [];
+  @Input() doggies: Dog[] = [];
 
   showVaccinated : boolean = false;
   vaccinatedDogs : string[] = [];

@@ -9,6 +9,7 @@ import {Dog} from "./model/Dog";
 export class AppComponent implements OnInit {
   title = 'My first app!';
   doggies: Dog[] = [];
+
   dogTitle = 'Dog title from Parent Component';
   dogNames: string[] = ['Caesar', 'Scooby', 'Stark'];
 
